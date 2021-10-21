@@ -1,0 +1,40 @@
+<h2>List of Orders:</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>OrderId</th>
+            <th>CustomerId</th>
+            <th>EmployeeId</th>
+            <th>OrderDate</th>
+            <th>RequiredDate</th>
+            <th>ShippedDate</th>
+            <th>ShipVia</th>
+            <th>Freight</th>
+            <th>ShipName</th>
+            <th>ShipAddress</th>
+            <th>ShipCity</th>
+            <th>ShipRegion</th>
+            <th>ShipPostalCode</th>
+            <th>ShipCountry</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of OrderList">
+            <td>{{dataItem.OrderId}} </td>
+            <td>{{dataItem.CustomerId}} </td>
+            <td>{{dataItem.EmployeeId}} </td>
+            <td>{{dataItem.OrderDate}} </td>
+            <td>{{dataItem.RequiredDate}} </td>
+            <td>{{dataItem.ShippedDate}} </td>
+            <td>{{dataItem.ShipVia}} </td>
+            <td>{{dataItem.Freight}} </td>
+            <td>{{dataItem.ShipName}} </td>
+            <td>{{dataItem.ShipAddress}} </td>
+            <td>{{dataItem.ShipCity}} </td>
+            <td>{{dataItem.ShipRegion}} </td>
+            <td>{{dataItem.ShipPostalCode}} </td>
+            <td>{{dataItem.ShipCountry}} </td>
+
+        </tr>
+    </tbody>
+</table>

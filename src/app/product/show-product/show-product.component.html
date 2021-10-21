@@ -1,0 +1,33 @@
+<div class="container">
+<h2>List of Products:</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ProductId</th>
+            <th>ProductName</th>
+            <th>SupplierId</th>
+            <th>CategoryId</th>
+            <th>QuantityPerUnit</th>
+            <th>UnitPrice</th>
+            <th>UnitsInStock</th>
+            <th>UnitsOnOrder</th>
+            <th>ReorderLevel</th>
+            <th>Discontinued</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of ProductList">
+            <td>{{dataItem.ProductId}} </td>
+            <td>{{dataItem.ProductName}} </td>
+            <td>{{dataItem.SupplierId}} </td>
+            <td>{{dataItem.CategoryId}} </td>
+            <td>{{dataItem.QuantityPerUnit}} </td>
+            <td>{{dataItem.UnitPrice}} </td>
+            <td>{{dataItem.UnitsInStock}} </td>
+            <td>{{dataItem.UnitsOnOrder}} </td>
+            <td>{{dataItem.ReorderLevel}} </td>
+            <td>{{dataItem.Discontinued}} </td>
+        </tr>
+    </tbody>
+</table>
+</div>

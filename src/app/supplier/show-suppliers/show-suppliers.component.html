@@ -1,0 +1,35 @@
+<h2>List of Suppliers:</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>SupplierId</th>
+            <th>CompanyName</th>
+            <th>ContactName</th>
+            <th>ContactTitle</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>Region</th>
+            <th>PostalCode</th>
+            <th>Country</th>
+            <th>Phone</th>
+            <th>Fax</th>
+            <th>HomePage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of SupplierList">
+            <td>{{dataItem.SupplierId}} </td>
+            <td>{{dataItem.CompanyName}} </td>
+            <td>{{dataItem.ContactName}} </td>
+            <td>{{dataItem.ContactTitle}} </td>
+            <td>{{dataItem.Address}} </td>
+            <td>{{dataItem.City}} </td>
+            <td>{{dataItem.Region}} </td>
+            <td>{{dataItem.PostalCode}} </td>
+            <td>{{dataItem.Country}} </td>
+            <td>{{dataItem.Phone}} </td>
+            <td>{{dataItem.Fax}} </td>
+            <td>{{dataItem.HomePage}} </td>
+        </tr>
+    </tbody>
+</table>

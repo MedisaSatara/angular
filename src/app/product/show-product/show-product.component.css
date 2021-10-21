@@ -1,0 +1,15 @@
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+  }
+  th{
+      background-color: gray;
+      color: white;
+
+  }
+  .table{
+      width: 100%;
+  }
+  .container{
+      width: 100%;
+  }
